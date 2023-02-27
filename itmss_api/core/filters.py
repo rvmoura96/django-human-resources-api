@@ -9,7 +9,7 @@ class EmployeeFilter(filters.FilterSet):
         queryset=Department.objects.all(),
         empty_label="Todos os departamentos",
         label="Departamento" ,
-        field_name="Departamento"
+        field_name="department"
     )
 
     class Meta:

@@ -9,10 +9,15 @@ class HeadQuarter(models.Model):
     country = models.CharField('País', max_length=50)
 
 
+    def __str__(self) -> str:
+        return self.cnpj
+
 class Department(models.Model):
     cost_center = models.CharField("Centro de Custos", max_length=20)
     name = models.CharField("Nome", max_length=25)
 
+    def __str__(self) -> str:
+        return self.name
 
 class Employee(models.Model):
     name = models.CharField('Nome completo', max_length=100)
