@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class HeadQuarters(models.Model):
+class HeadQuarter(models.Model):
     cnpj = models.CharField('CNPJ', max_length=18)
     address = models.CharField('Logradouro', max_length=150)
     city = models.CharField('Cidade', max_length=100)
@@ -25,9 +25,11 @@ class Employee(models.Model):
     city = models.CharField('Cidade', max_length=100)
     department = models.ForeignKey(
         Department,
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        related_name='departments'
     )
     headquarter = models.ForeignKey(
-        HeadQuarters,
-        on_delete=models.CASCADE
+        HeadQuarter,
+        on_delete=models.CASCADE,
+        related_name='headquarters'
     )

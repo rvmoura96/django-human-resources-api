@@ -8,6 +8,8 @@ authors = ["Renan moura <rvmoura.96@gmail.com>"]
 python = "^3.10"
 Django = "^4.1.7"
 djangorestframework = "^3.14.0"
+django-filter = "^22.1"
+ipython = "^8.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
