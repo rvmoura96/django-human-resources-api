@@ -194,3 +194,8 @@ Para a atualização de dados de um departamento já criado faça uma requisiç�
 ```
 
 Para a exclusão de um departamento faça uma requisição do tipo **DELETE** para o endereço: http://localhost:8000/employees/{id_do_funcionario_desejado}/
+
+
+
+## Melhorias a serem feitas
+*   Inclusão de testes automatizados para validação do comportamento da aplicação ideia da utilização do framework behave como o framework de testes.
