@@ -1,6 +1,6 @@
 from django_filters import rest_framework as filters
 
-from core.models import Employee, Department
+from core.models import Employee, Department, HeadQuarter
 
 
 class EmployeeFilter(filters.FilterSet):
@@ -11,7 +11,12 @@ class EmployeeFilter(filters.FilterSet):
         label="Departamento" ,
         field_name="department"
     )
-
+    headquarter = filters.ModelChoiceFilter(
+        queryset=HeadQuarter.objects.all(),
+        empty_label="Todos as sedes",
+        label="Sede" ,
+        field_name="headquarter"
+    )
     class Meta:
         model = Employee
-        fields = ('city', 'department')
+        fields = ('city', 'department', 'headquarter')
