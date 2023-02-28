@@ -7,7 +7,7 @@ O controle de dependencias do projeto foi realizado com o [Poetry](https://pytho
 
 # Como executar
 
-Primeiramente, clone este repositório através do seguinte comando:
+Primeiramente, clone este repositório através do seguinte comando no terminal:
 ```
 git clone https://github.com/rvmoura96/django-human-resources-api.git
 ```
@@ -17,35 +17,35 @@ Após a conclusão do download entre no diretório:
 cd django-human-resources-api
 ```
 
-Na raíz do repositório onde encontram-se os arquivos pyproject.toml, README.MD execute o seguinte comando para a instalação das dependencias do projeto em um ambiente virtual controlado pelo poetry:
+Na raíz do repositório onde encontram-se os arquivos pyproject.toml, README.MD execute o seguinte comando para a instalação das dependencias do projeto em um ambiente virtual controlado pelo poetry no terminal:
 ```
 poetry install
 ```
 
-Após a instalação execute o seguinte comando para ativar o ambiente virtual:
+Após a instalação execute o seguinte comando para ativar o ambiente virtual no terminal:
 ```
 poetry shell
 ```
 
-Com o ambiente virtual ativo entre no diretório itmss_api a raiz do nosso projeto Django
+Com o ambiente virtual ativo entre no diretório itmss_api a raiz do nosso projeto Django no terminal
 
 ```
 cd itmss_api
 ```
 
-seguindo o passo anterior encontra-se no mesmo nivel do arquivo manage.py vamos inicializar começando a aplicando as nossas migrações do banco de dados, utilize o seguinte comando:
+seguindo o passo anterior encontra-se no mesmo nivel do arquivo manage.py vamos inicializar começando a aplicando as nossas migrações do banco de dados, utilize o seguinte comando no terminal:
 
 ```
 python manage.py migrate
 ```
 
-Após isso vamos fazer a criação de um usuário admin necessário para acessar aos recursos da api, utilize o seguinte comando:
+Após isso vamos fazer a criação de um usuário admin necessário para acessar aos recursos da api, utilize o seguinte comando no terminal:
 ```
 python manage.py createsuperuser --email admin@example.com --username admin
 ```
 será solicitada a inserção de uma senha no shell onde o comando foi executado está será a senha de acesso do usuário criado acima.
 
-Feito isso podemos iniciar nossa aplicação com o seguinte comando:
+Feito isso podemos iniciar nossa aplicação com o seguinte comando no terminal:
 ```
 python manage.py runserver
 ```
